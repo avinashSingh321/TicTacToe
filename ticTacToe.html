@@ -1,0 +1,327 @@
+
+<html>
+<script>
+
+let x=1;
+let b1=1;
+let b2=1;
+let b3=1;
+let b4=1;
+let b5=1;
+let b6=1;
+let b7=1;
+let b8=1;
+let b9=1;
+let i=0;
+let ab = "Q";
+let bc = "Q";
+let cd = "Q";
+let de = "Q";
+let ef = "Q";
+let fg = "Q";
+let gh = "Q";
+let hi = "Q";
+let ij = "Q";
+let z=document.getElementById("1").valueOf();
+function fun(){
+location.reload();
+const refreshBtn = document.getElementById("btnRefresh");
+
+function handleClick() {
+  history.go(0);
+}
+
+
+}
+function winning(){
+if( 
+
+(ab.localeCompare("X")==0 && bc.localeCompare("X")==0  && cd.localeCompare("X")==0 ) || 
+    (ab.localeCompare("X")==0 && de.localeCompare("X")==0 && gh.localeCompare("X")==0) ||
+    (ab.localeCompare("X")==0 && ef.localeCompare("X")==0 && ij.localeCompare("X")==0) || 
+    (de.localeCompare("X")==0 && ef.localeCompare("X")==0 && fg.localeCompare("X")==0) ||
+    (gh.localeCompare("X")==0 && hi.localeCompare("X")==0 && ij.localeCompare("X")==0) || 
+    (bc.localeCompare("X")==0 && ef.localeCompare("X")==0 && hi.localeCompare("X")==0) ||
+    (cd.localeCompare("X")==0 && fg.localeCompare("X")==0 && ij.localeCompare("X")==0) || 
+    (cd.localeCompare("X")==0 && ef.localeCompare("X")==0 && gh.localeCompare("X")==0 )
+
+){
+				
+ 		     alert("X wins");
+
+           	  location.reload();
+     }
+     
+else if( 
+
+(ab.localeCompare("O")==0 && bc.localeCompare("O")==0  && cd.localeCompare("O")==0 ) || 
+    (ab.localeCompare("O")==0 && de.localeCompare("O")==0 && gh.localeCompare("O")==0) ||
+    (ab.localeCompare("O")==0 && ef.localeCompare("O")==0 && ij.localeCompare("O")==0) || 
+    (de.localeCompare("O")==0 && ef.localeCompare("O")==0 && fg.localeCompare("O")==0) ||
+    (gh.localeCompare("O")==0 && hi.localeCompare("O")==0 && ij.localeCompare("O")==0) || 
+    (bc.localeCompare("O")==0 && ef.localeCompare("O")==0 && hi.localeCompare("O")==0) ||
+    (cd.localeCompare("O")==0 && fg.localeCompare("O")==0 && ij.localeCompare("O")==0) || 
+    (cd.localeCompare("O")==0 && ef.localeCompare("O")==0 && gh.localeCompare("O")==0 )
+
+){
+;
+				
+ 		     alert("O WINS");
+			
+			
+			location.reload();
+             
+     }
+     else{
+
+	if(i==9){
+
+			alert("DRAW");
+
+location.reload();		
+}	
+}
+
+}
+function btn1(){
+
+if(b1==1){
+if(i%2==0 ){
+document.getElementById("1").innerHTML="X";
+i++;
+ab="X";
+}else{
+document.getElementById("1").innerHTML="O";
+i++;
+ab="O";
+}
+b1=0;
+}
+ winning();
+}
+function cpe2(){
+if(b2==1){
+if(i%2==0 ){
+document.getElementById("2").innerHTML="X";
+i++;
+bc="X";
+}else{
+document.getElementById("2").innerHTML="O";
+i++;
+bc="O";
+}
+b2=0;
+}
+winning();
+}
+function abc3(){
+if(b3==1){
+if(i%2==0 ){
+document.getElementById("3").innerHTML="X";
+i++;
+cd="X";
+}else{
+document.getElementById("3").innerHTML="O";
+i++;
+cd="O";
+}
+b3=0;
+}
+winning();
+}
+function asd4(){
+if(b4==1){
+if(i%2==0 ){
+document.getElementById("4").innerHTML="X";
+i++;
+de="X";
+}else{
+document.getElementById("4").innerHTML="O";
+i++;
+de="O";
+}
+b4=0;
+}
+winning();
+}
+function jht5(){
+if(b5==1){
+if(i%2==0 ){
+document.getElementById("5").innerHTML="X";
+i++;
+ef="X";
+}else{
+document.getElementById("5").innerHTML="O";
+i++;
+ef="O";
+}
+b5=0;
+}
+winning();
+}
+function swe6(){
+if(b6==1){
+if(i%2==0 ){
+document.getElementById("6").innerHTML="X";
+i++;
+fg="X";
+}else{
+document.getElementById("6").innerHTML="O";
+i++;
+fg="O";
+}
+b6=0;
+}
+winning();
+}
+function qwe7(){
+if(b7==1){
+if(i%2==0 ){
+document.getElementById("7").innerHTML="X";
+i++;
+gh="X";
+}else{
+document.getElementById("7").innerHTML="O";
+i++;
+gh="O";
+}
+b7=0;
+}
+winning();
+}
+function iuy8(){
+if(b8==1){
+if(i%2==0 ){
+document.getElementById("8").innerHTML="X";
+i++;
+hi="X";
+}else{
+document.getElementById("8").innerHTML="O";
+i++;
+hi="O";
+}
+b8=0;
+}
+winning();
+}
+function bnr9(){
+if(b9==1){
+if(i%2==0 ){
+document.getElementById("9").innerHTML="X";
+i++;
+ij="X";
+}else{
+document.getElementById("9").innerHTML="O";
+i++;
+ij="O";
+}
+b9=0;
+}
+winning();
+}
+</script>
+<style>
+
+
+h2{
+	text-align:center;  
+	color:coral;
+
+
+}
+
+.start{
+	text-align:center;
+	
+	background:green;
+ 
+  align-items: center;
+  height: 60px;
+  border: 1px solid green;
+
+}
+.start:hover{
+	background:darkgreen;
+}
+.btn{
+		 align-items: center;
+		text-align:center;
+		color:white;
+		position fixed;
+		
+
+		}
+.clickable {
+            height: 50px;
+            background: white;
+       	     
+       	   }
+
+.clickable:hover {
+            background: coral;
+        }
+
+table{
+	 margin-left: auto;
+  	margin-right: auto;
+        
+ 
+        }
+
+p.fixed{
+	 position: fixed;
+	  bottom:80px;
+	  right: 0px;
+
+}
+.header{
+	font:Times New Roman;
+	color:coral;
+	text-align:center;
+	}
+
+td {
+	padding-top: 10px;
+	  padding-bottom: 20px;
+	  padding-left: 30px;
+	  padding-right: 40px;
+ 	 border-style: solid;
+ 	 height:50px;
+ 	 width:50px;
+}
+</style>
+<body>
+
+<h1 class="header"><u>TIC TAC TOE</u></h1>
+<br><br><br><br>
+<div class="divhrdr">
+<table  >
+  <tr>
+    <td id="1" class="clickable"  onclick="btn1()" ></td>
+    <td id="2" class="clickable"  onclick="cpe2()"></td>
+    <td id="3" class="clickable"  onclick="abc3()"></td>
+  </tr>
+  <tr>
+    <td id="4" class="clickable"  onclick="asd4()"></td>
+    <td id="5" class="clickable"  onclick="jht5()"></td>
+    <td id="6" class="clickable"  onclick="swe6()"></td>
+  </tr>
+  <tr>
+    <td id="7" class="clickable"  onclick="qwe7()"></td>
+    <td id="8" class="clickable"  onclick="iuy8()"></td>
+    <td id="9" class="clickable"  onclick="bnr9()"></td>
+  </tr>
+</table>
+
+</div>
+<br><br>
+<div class="start" onclick="fun()">
+
+<h2 class="btn"  >Reset</h2>
+</div>
+<h2>Play And have fun  </h2>
+<p>Copyright &copy;Avinash Singh 2025</p>
+
+</body>
+</html>
+
